@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Thông tin liên hệ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-6 px-5 py-3 mx-auto mt-5 border-1 rounded-3 shadow-lg" action="/Contact" method="get">
+    <h1 class="text-center text-uppercase py-4">thông tin học viên</h1>
+    <div class="mb-3">
+        <label for="hoten" class="form-label">Họ tên</label>
+        <input type="text" class="form-control text-center" id="hoten" name="hoten" value="@ViewData["HoTen"]" aria-describedby="text" disabled>
+    </div>
+    <div class="mb-3">
+        <label for="ngaysinh" class="form-label">Ngày sinh</label>
+        <input type="text" class="form-control text-center" id="ngaysinh" name="ngaysinh" value="@ViewData["NgaySinh"]" aria-describedby="text" disabled>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control text-center" id="email" name="email" value="@ViewData["Email"]" aria-describedby="text" disabled>
+    </div>
+    <div class="mb-3">
+        <label for="sdt" class="form-label">Số điện thoại</label>
+        <input type="number" class="form-control text-center" id="sdt" name="sdt" value="@ViewData["SDT"]" aria-describedby="text" disabled>
+    </div>
+</div>
+
